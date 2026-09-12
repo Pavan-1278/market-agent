@@ -1,0 +1,44 @@
+# API keys and local environment settings
+.env
+.env.*
+
+# Allow a template containing placeholders only, never real keys
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python-generated files and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local logs
+logs/
+*.log
+
+# Local databases and their temporary files
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Python build output
+build/
+dist/
+*.egg-info/
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Operating-system files
+Thumbs.db
+Desktop.ini
+.DS_Store
