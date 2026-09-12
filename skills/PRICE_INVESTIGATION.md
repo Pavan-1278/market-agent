@@ -1,45 +1,45 @@
-# Skill: Price Investigation
+Skill: Price Investigation
 
-## Goal
+Goal
 
-Explain why a stock is moving using available market evidence.
+Assess plausible explanations for a supplied price move while keeping observations, interpretations, and unknowns separate.
 
-## Investigation Order
+Investigation Order
 
-Check:
+Review available evidence for:
 
-1. Target stock price and volume
-2. Related major stocks
-3. Relevant sector/ETF performance
-4. QQQ and SPY
-5. Company news
-6. SEC/company disclosures
-7. Macro developments
-8. Market-wide risk events
+Target price, volume, observation window, and any supplied corporate-action adjustment.
 
-## Reasoning
+Related securities and relevant sector benchmarks.
 
-Determine whether the move is primarily:
+QQQ/SPY or other supplied broad-market benchmarks.
 
-- Company-specific
-- Sector-driven
-- Market-driven
-- Macro-driven
-- News-driven
-- Unclear
+Company news and SEC/company disclosures.
 
-Do not assign a cause without supporting evidence.
+Macro and market-wide risk developments.
 
-Correlation alone is not proof of causation.
+This is an evidence checklist, not permission to pretend tools ran. Use only supplied results or actual available tool calls; state missing evidence.
 
-## Output
+Reasoning
 
-Return:
+Compare matching sessions, currencies, timestamps, and return bases. Request/use Python comparisons rather than calculating them. Missing alignment limits conclusions.
 
-- likely_cause
-- evidence
-- market_context
-- confidence
-- one-line explanation
+Distinguish company-specific, sector, market, macro, or combined hypotheses; "unclear" is valid. Do not force a single cause.
 
-If evidence is insufficient, say the cause is unclear.
+A proposed cause must fit the move's timing. An article published later may report an earlier event; distinguish those times. A clearly later event cannot explain an earlier move.
+
+Temporal proximity, matching sentiment, or a large return alone does not prove causation. Attribute any reporter's causal explanation as reporting, not verified fact.
+
+Consider supplied contradictory evidence and alternative explanations. Never invent analyst reactions, order flow, positioning, short squeezes, or options activity.
+
+No matching retrieved article means limited evidence, not "no news" or "no catalyst."
+
+Output
+
+Preserve the application's keys corresponding to likely_cause, evidence, market_context, confidence, and one-line explanation.
+
+Use "unclear" when a cause is not established. Keep evidence to concise observed facts with supplied source IDs/locations where available; never invent citations.
+
+Confidence: low for sparse, conflicting, or mistimed evidence; medium for a supported but incomplete hypothesis; high only for well-aligned, corroborated evidence after considering alternatives. It is not a probability of causation or a forecast.
+
+The one-line explanation must distinguish a potential driver from a confirmed observation.

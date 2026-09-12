@@ -1,64 +1,45 @@
-# Skill: News Analysis
+Skill: News Analysis
 
-## Goal
+Goal
 
-Identify whether a market story contains new, material information worth reading.
+Identify material reported developments worth reading. This is news evaluation, not proof of what moved a stock.
 
-## Importance
+Method
 
-Rate 1–10:
+Identify the reported event, subject, period, and material change supported by the supplied text. Distinguish results, outlook, proposals, completed actions, and opinion. If only a headline is supplied, do not infer missing terms or article contents.
 
-- 9–10: Major market-moving information
-- 7–8: Material new information
-- 5–6: Relevant but not urgent
-- 3–4: Low-value commentary
-- 1–2: Noise or recycled information
+Importance
 
-Before giving 7+, ask:
+9–10: Specific, exceptionally consequential development with strong supplied support for its scale and significance.
 
-**What materially changed?**
+7–8: Concrete material information about earnings, outlook, financing, business operations, regulation, or macro conditions.
 
-If there is no clear answer, score below 7.
+5–6: Relevant reported development with moderate significance or important unresolved context.
 
-## Evidence Wording
+3–4: Limited reading value, mostly commentary, or weak evidence of material change.
 
-Do not strengthen the source language.
+1–2: Routine/repeated information, or insufficient supplied evidence to identify a substantive development.
 
-If the evidence says "may", "could", "expected", "reportedly", or uses cautious wording,
-preserve that level of uncertainty.
+For 7+, identify the concrete material development. A dramatic headline, large price move, round dollar figure, or shortlist score is not enough. Unknown freshness limits claims of novelty; it does not automatically make a material report worthless. These scores do not certify source accuracy.
 
-Do not turn indirect relationships into confirmed causal claims.
+Prioritize and Reduce Noise
 
-## Prioritize
+Consider the core watchlist and Fed, rates, CPI, PCE, jobs, GDP, yields, VIX, oil, geopolitics, and semiconductor restrictions.
 
-Pay attention to developments affecting:
+Usually deprioritize generic comparisons, unsupported price-target speculation, routine holdings changes, and price recaps. Do not discard material news merely because its headline is opinion-shaped or the issuer is small. Evaluate financing against supplied company context; repayment does not automatically establish reduced dilution or improved net liquidity.
 
-AMD, NVDA, SPY, QQQ, AVGO, TSM, ARM, MU, INTC, MSFT, META, GOOGL, AMZN.
+Score independently of triage and provider scores. A material story need not explain today's move. Do not assert that the full article has "no new information" when only a summary is available.
 
-Also prioritize:
+Output
 
-Fed, rates, CPI, PCE, jobs, GDP, Treasury yields, VIX, oil, geopolitics, and semiconductor restrictions.
+Return exactly the requested fields:
 
-Watchlist membership alone must not increase the importance score.
+importance: integer 1–10.
 
-## Reduce Importance
+sentiment: bullish, bearish, mixed, or neutral under the core rules.
 
-Lower scores for:
+affected: only evidence-grounded ticker symbols.
 
-- Opinion pieces
-- Stock comparisons
-- Price-target articles
-- Minor institutional holdings
-- Clickbait
-- Recycled news
+why_read: one sentence, preferably no more than 45 words, joining an attributed reported development to its supported significance or a clearly conditional implication.
 
-## Output
-
-Return:
-
-- `importance`: integer 1–10
-- `sentiment`: bullish, bearish, mixed, or neutral
-- `affected`: relevant ticker symbols only
-- `why_read`: one sentence maximum
-
-`why_read` should explain **why the new information matters**, not repeat the headline.
+When evidence is inadequate, say what is missing in why_read; do not manufacture an investment takeaway.
