@@ -1,0 +1,56 @@
+{
+  "_fixture": {
+    "mode": "DEVELOPMENT_ONLY",
+    "provenance": "synthetic_news_scenario",
+    "ticker": "FEIM",
+    "independently_verified": false,
+    "warning": "Authored mock news, NOT an original provider response. Values may echo prior console outputs, which were not independently verified."
+  },
+  "items": "4",
+  "feed": [
+    {
+      "title": "[MOCK TEST DATA] FEIM reports quarterly revenue and funded backlog",
+      "url": "https://example.invalid/market-agent-fixtures/feim-earnings",
+      "time_published": "20260911T052919",
+      "source": "MOCK DEVELOPMENT DATA - not actual reporting",
+      "authors": [
+        "Synthetic fixture author"
+      ],
+      "summary": "Synthetic scenario for software testing; not a factual claim about the named company. In this simulation, Frequency Electronics (FEIM) publishes its earnings announcement at 20:10 UTC on September 10, 2026, before the supplied September 11 market snapshot. It reports Q1 fiscal 2027 revenue of $23.5 million, 70% year-over-year revenue growth, a funded backlog of $129 million, and improved margins. No analyst consensus, prior guidance, or margin percentages are supplied. The scenario does not establish what caused the recorded share-price move.",
+      "_fixture_case": "material_earnings_with_known_simulated_timing"
+    },
+    {
+      "title": "[MOCK TEST DATA] FEIM reports quarterly revenue and funded backlog",
+      "url": "https://example.invalid/market-agent-fixtures/feim-earnings",
+      "time_published": "20260911T052919",
+      "source": "MOCK DEVELOPMENT DATA - not actual reporting",
+      "authors": [
+        "Synthetic fixture author"
+      ],
+      "summary": "Synthetic scenario for software testing; not a factual claim about the named company. In this simulation, Frequency Electronics (FEIM) publishes its earnings announcement at 20:10 UTC on September 10, 2026, before the supplied September 11 market snapshot. It reports Q1 fiscal 2027 revenue of $23.5 million, 70% year-over-year revenue growth, a funded backlog of $129 million, and improved margins. No analyst consensus, prior guidance, or margin percentages are supplied. The scenario does not establish what caused the recorded share-price move.",
+      "_fixture_case": "material_earnings_with_known_simulated_timing"
+    },
+    {
+      "title": "[MOCK TEST DATA] Example Research Fund buys shares of FEIM",
+      "url": "https://example.invalid/market-agent-fixtures/feim-routine-holdings",
+      "time_published": "20260911T150000",
+      "source": "MOCK DEVELOPMENT DATA - not actual reporting",
+      "authors": [
+        "Synthetic fixture author"
+      ],
+      "summary": "Synthetic scenario for software testing; not a factual claim about the named company. In this simulation, a fund discloses a routine small FEIM shareholding. No new company earnings, contract, guidance, or regulatory development is provided.",
+      "_fixture_case": "obvious_holdings_noise"
+    },
+    {
+      "title": "[MOCK TEST DATA] FEIM stock outlook: a general discussion",
+      "url": "https://example.invalid/market-agent-fixtures/feim-opinion",
+      "time_published": "20260911T160000",
+      "source": "MOCK DEVELOPMENT DATA - not actual reporting",
+      "authors": [
+        "Synthetic fixture author"
+      ],
+      "summary": "Synthetic scenario for software testing; not a factual claim about the named company. In this simulation, an opinion article discusses FEIM stock without supplying a new company announcement, new financial figures, or a dated catalyst. It should not be treated as independent confirmation of the earnings scenario.",
+      "_fixture_case": "generic_commentary"
+    }
+  ]
+}

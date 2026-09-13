@@ -38,6 +38,9 @@ dist/
 .vscode/
 .idea/
 
+# Local API response cache
+.cache/
+
 # Operating-system files
 Thumbs.db
 Desktop.ini

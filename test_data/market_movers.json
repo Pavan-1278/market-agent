@@ -1,0 +1,144 @@
+{
+  "_fixture": {
+    "mode": "DEVELOPMENT_ONLY",
+    "provenance": "partial_snapshot_reconstructed_from_user_console_output",
+    "independently_verified": false,
+    "is_complete_provider_response": false,
+    "warning": "Not current market data. Only the 17 candidates from the supplied console snapshot are retained. Group membership follows the corresponding supplied raw response. Empty top_losers is a consequence of this subset, not an assertion that the market had no losers.",
+    "average_volume_supplied": false,
+    "security_types_verified": false
+  },
+  "metadata": "DEVELOPMENT FIXTURE - partial September 11, 2026 market snapshot; not a live API response.",
+  "last_updated": "2026-09-11 16:15:57 US/Eastern",
+  "top_gainers": [
+    {
+      "ticker": "MKDW",
+      "price": "7.75",
+      "change_amount": "2.65",
+      "change_percentage": "51.9608%",
+      "volume": "1377473"
+    },
+    {
+      "ticker": "ACVA",
+      "price": "10.415",
+      "change_amount": "3.195",
+      "change_percentage": "44.2521%",
+      "volume": "114834982"
+    },
+    {
+      "ticker": "FEIM",
+      "price": "88.375",
+      "change_amount": "26.315",
+      "change_percentage": "42.4025%",
+      "volume": "1540558"
+    }
+  ],
+  "top_losers": [],
+  "most_actively_traded": [
+    {
+      "ticker": "KHC",
+      "price": "24.6",
+      "change_amount": "0.21",
+      "change_percentage": "0.861%",
+      "volume": "123581964"
+    },
+    {
+      "ticker": "ACVA",
+      "price": "10.415",
+      "change_amount": "3.195",
+      "change_percentage": "44.2521%",
+      "volume": "114834982"
+    },
+    {
+      "ticker": "TNON",
+      "price": "5.93",
+      "change_amount": "0.63",
+      "change_percentage": "11.8868%",
+      "volume": "107143416"
+    },
+    {
+      "ticker": "ETHA",
+      "price": "19.16",
+      "change_amount": "0.6",
+      "change_percentage": "3.2328%",
+      "volume": "96212647"
+    },
+    {
+      "ticker": "SMR",
+      "price": "8.605",
+      "change_amount": "-1.605",
+      "change_percentage": "-15.7199%",
+      "volume": "91794918"
+    },
+    {
+      "ticker": "NVDA",
+      "price": "218.29",
+      "change_amount": "-0.07",
+      "change_percentage": "-0.0321%",
+      "volume": "85575624"
+    },
+    {
+      "ticker": "INTC",
+      "price": "102.94",
+      "change_amount": "2.62",
+      "change_percentage": "2.6116%",
+      "volume": "85085733"
+    },
+    {
+      "ticker": "NOK",
+      "price": "11.145",
+      "change_amount": "0.525",
+      "change_percentage": "4.9435%",
+      "volume": "84654005"
+    },
+    {
+      "ticker": "BITO",
+      "price": "10.385",
+      "change_amount": "0.015",
+      "change_percentage": "0.1446%",
+      "volume": "84454235"
+    },
+    {
+      "ticker": "SPCX",
+      "price": "151.21",
+      "change_amount": "3.03",
+      "change_percentage": "2.0448%",
+      "volume": "78500985"
+    },
+    {
+      "ticker": "ORCL",
+      "price": "150.15",
+      "change_amount": "-2.79",
+      "change_percentage": "-1.8242%",
+      "volume": "78051077"
+    },
+    {
+      "ticker": "NU",
+      "price": "14.62",
+      "change_amount": "-0.4",
+      "change_percentage": "-2.6631%",
+      "volume": "65301246"
+    },
+    {
+      "ticker": "AAL",
+      "price": "13.01",
+      "change_amount": "0.16",
+      "change_percentage": "1.2451%",
+      "volume": "63391438"
+    },
+    {
+      "ticker": "SOXS",
+      "price": "44.16",
+      "change_amount": "-2.58",
+      "change_percentage": "-5.5199%",
+      "volume": "62985757"
+    },
+    {
+      "ticker": "BMNR",
+      "price": "25.05",
+      "change_amount": "0.85",
+      "change_percentage": "3.5124%",
+      "volume": "62370759"
+    }
+  ]
+}

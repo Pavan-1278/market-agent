@@ -18,6 +18,18 @@ Gap, sector divergence, or index contribution when the necessary aligned measure
 
 Without those inputs, omit those claims. A raw share count is not evidence of unusual volume. Do not infer market capitalization, normal volatility, company activity, ETF exposure, warrant status, or a corporate action from a symbol or share price. Security type remains unverified unless supplied.
 
+
+## Python-Calculated Rankings
+
+Use `volume_rank_in_candidates` and
+`absolute_change_rank_in_candidates` for numerical ranking statements.
+
+Rank 1 means largest within the supplied filtered candidate set.
+Equal values share a rank. Do not recalculate rankings yourself.
+
+These ranks do not establish market-wide rankings, above-normal volume,
+or the cause of a move. Use `change_percentage` for the move's direction.
+
 Priority
 
 9–10: Strongest measured investigation leads in the supplied set.

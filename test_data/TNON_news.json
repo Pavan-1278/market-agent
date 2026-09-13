@@ -1,0 +1,34 @@
+{
+  "_fixture": {
+    "mode": "DEVELOPMENT_ONLY",
+    "provenance": "synthetic_news_scenario",
+    "ticker": "TNON",
+    "independently_verified": false,
+    "warning": "Authored mock news, NOT an original provider response. Values may echo prior console outputs, which were not independently verified."
+  },
+  "items": "2",
+  "feed": [
+    {
+      "title": "[MOCK TEST DATA] TNON announces early repayment of convertible notes",
+      "url": "https://example.invalid/market-agent-fixtures/tnon-convertible-notes",
+      "time_published": "20260911T120000",
+      "source": "MOCK DEVELOPMENT DATA - not actual reporting",
+      "authors": [
+        "Synthetic fixture author"
+      ],
+      "summary": "Synthetic scenario for software testing; not a factual claim about the named company. In this simulation, Tenon Medical (TNON) announces at 13:00 UTC on September 10, 2026 that it repaid $5.16 million of convertible notes ahead of a September 11, 2026 maturity date. The scenario does not supply the funding source, repayment fees, conversion terms, prior or remaining cash, total debt, or company-scale comparisons. The amount repaid is provided, but improved net liquidity, avoided dilution, and causation of the share-price move are not established.",
+      "_fixture_case": "debt_repayment_with_missing_context"
+    },
+    {
+      "title": "[MOCK TEST DATA] TNON debt repayment covered in a second report",
+      "url": "https://example.invalid/market-agent-fixtures/tnon-convertible-notes-second-report",
+      "time_published": "20260911T121000",
+      "source": "MOCK DEVELOPMENT DATA - not actual reporting",
+      "authors": [
+        "Synthetic fixture author"
+      ],
+      "summary": "Synthetic scenario for software testing; not a factual claim about the named company. In this simulation, a second outlet repeats the same TNON $5.16 million convertible-note repayment announcement made at 13:00 UTC on September 10, 2026. It adds no new financial terms, funding details, or evidence of the market-move cause. This is the same simulated event, not independent confirmation.",
+      "_fixture_case": "same_event_different_url"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "_fixture": {
+    "mode": "DEVELOPMENT_ONLY",
+    "provenance": "synthetic_empty_feed",
+    "ticker": "SPCX",
+    "independently_verified": false,
+    "warning": "Intentionally empty test response, NOT a claim that no news exists for this ticker."
+  },
+  "items": "0",
+  "feed": []
+}

@@ -1,0 +1,59 @@
+{
+  "fixture_version": 1,
+  "mode": "DEVELOPMENT_ONLY",
+  "warning": "This is a fixed test scenario, not live market research. The news summaries are synthetic, not captured original responses.",
+  "replay_time_utc": "2026-09-12T04:39:47+00:00",
+  "market_snapshot_time_as_supplied": "2026-09-11 16:15:57 US/Eastern",
+  "lookback_hours": 72,
+  "news_window_utc": {
+    "from": "20260909T0439",
+    "to": "20260912T0439"
+  },
+  "market_file": "market_movers.json",
+  "news_files": {
+    "MKDW": "MKDW_news.json",
+    "ACVA": "ACVA_news.json",
+    "FEIM": "FEIM_news.json",
+    "KHC": "KHC_news.json",
+    "TNON": "TNON_news.json",
+    "ETHA": "ETHA_news.json",
+    "SMR": "SMR_news.json",
+    "NVDA": "NVDA_news.json",
+    "INTC": "INTC_news.json",
+    "NOK": "NOK_news.json",
+    "BITO": "BITO_news.json",
+    "SPCX": "SPCX_news.json",
+    "ORCL": "ORCL_news.json",
+    "NU": "NU_news.json",
+    "AAL": "AAL_news.json",
+    "SOXS": "SOXS_news.json",
+    "BMNR": "BMNR_news.json"
+  },
+  "alpha_vantage_network_requests_allowed": false,
+  "missing_fixture_behavior": "stop_with_an_explicit_missing_fixture_error; never request live data or silently substitute an empty feed",
+  "use_wall_clock_for_fixture_news_window": false,
+  "write_into_live_cache": false,
+  "claude_outputs_included": false,
+  "exact_model_scores_expected": false,
+  "expected_data_checks": {
+    "unique_market_candidates": 17,
+    "news_files": 17,
+    "news_rows_before_filters": 6,
+    "news_rows_after_existing_filters": 4,
+    "FEIM_rows_before": 4,
+    "FEIM_rows_after_existing_filters": 2,
+    "TNON_rows_before": 2,
+    "TNON_rows_after_existing_filters": 2
+  },
+  "qualitative_checks": [
+    "Selected ticker symbols must come from market_movers.json; their identity and security type are not independently verified.",
+    "Do not describe volume as above average without a baseline.",
+    "Use supplied simulated event timing, not article publication time alone.",
+    "FEIM mock earnings can be considered as a research lead; do not invent an earnings beat or claim to have verified actual results.",
+    "Routine holdings noise and exact article duplicates should not consume extra full-analysis calls.",
+    "TNON reports describe one simulated event; prefer a single representative.",
+    "TNON missing financing terms do not justify claims of reduced dilution or improved net liquidity.",
+    "Empty mock feeds mean no articles supplied in this fixture, not no real-world news.",
+    "Never claim that a shortlisted mock story proves the cause of the historical logged price move."
+  ]
+}
